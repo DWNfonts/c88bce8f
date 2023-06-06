@@ -1,5 +1,6 @@
 # c88bce8f
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 #### 介绍
 字体编辑器
@@ -39,3 +40,6 @@
 =======
 A font editor based on [Bits'n'Picas](https://github.com/kreativekorp/bitsnpicas) by [DWNfonts](https://dwnfonts.github.io/)
 >>>>>>> init
+=======
+A font editor based on [Bits'n'Picas](https://github.com/kreativekorp/bitsnpicas) by [DWNfonts](https://dwnfonts.github.io/)
+>>>>>>> What the fudge...
