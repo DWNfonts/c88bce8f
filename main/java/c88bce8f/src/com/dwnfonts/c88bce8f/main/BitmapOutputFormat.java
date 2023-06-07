@@ -8,6 +8,11 @@ import com.dwnfonts.c88bce8f.exporter.*;
 import com.kreative.unicode.data.EncodingList;
 
 public enum BitmapOutputFormat {
+	DFF(".dff", "dff") {
+		public BitmapFontExporter createExporter(BitmapOutputOptions o) {
+			return new KbitxBitmapFontExporter();
+		}
+	},
 	KBITX(".kbitx", "kbitx", "kbnp2") {
 		public BitmapFontExporter createExporter(BitmapOutputOptions o) {
 			return new KbitxBitmapFontExporter();

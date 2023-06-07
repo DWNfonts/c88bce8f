@@ -8,6 +8,12 @@ import com.dwnfonts.c88bce8f.importer.*;
 import com.kreative.unicode.data.EncodingList;
 
 public enum BitmapInputFormat {
+	DFF(BitmapFont.NAME_FAMILY_AND_STYLE) {
+		public boolean recognize(FileProxy fp) { return fp.hasExtension(".dff"); }
+		public BitmapFontImporter createImporter(BitmapInputOptions o) {
+			return new KbitxBitmapFontImporter();
+		}
+	},
 	KBITX(BitmapFont.NAME_FAMILY_AND_STYLE) {
 		public boolean recognize(FileProxy fp) { return fp.hasExtension(".kbitx"); }
 		public BitmapFontImporter createImporter(BitmapInputOptions o) {

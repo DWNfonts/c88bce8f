@@ -37,7 +37,9 @@ c88bce8f.jar: bin
 c88bce8f-src.tgz: src
 	export COPYFILE_DISABLE=true
 	find src -name .DS_Store -delete
+	cp ../../../LICENSE .
 	tar -czf c88bce8f-src.tgz LICENSE src/com/kreative/unicode src/com/dwnfonts/c88bce8f
+	rm LICENSE
 
 install: dep c88bce8f.jar MapEdit.jar KeyEdit.jar
 	sudo mkdir -p /usr/local/lib/

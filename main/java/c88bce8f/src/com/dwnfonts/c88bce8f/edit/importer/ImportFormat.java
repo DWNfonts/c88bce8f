@@ -15,6 +15,11 @@ import com.dwnfonts.c88bce8f.mover.MoverFrame;
 import com.kreative.unicode.data.GlyphList;
 
 public enum ImportFormat {
+	DFF {
+		public boolean recognize(FileProxy fp) { return fp.hasExtension(".dff"); }
+		public FontImporter<?> createImporter() { return new KbitxBitmapFontImporter(); }
+		public FontExporter<?> createExporter() { return new KbitxBitmapFontExporter(); }
+	},
 	KBITX {
 		public boolean recognize(FileProxy fp) { return fp.hasExtension(".kbitx"); }
 		public FontImporter<?> createImporter() { return new KbitxBitmapFontImporter(); }

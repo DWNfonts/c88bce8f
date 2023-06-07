@@ -230,7 +230,7 @@ public class Main {
 	}
 	
 	public static String getSaveSuffix(Font<?> font) {
-		if (font instanceof BitmapFont) return ".kbitx";
+		if (font instanceof BitmapFont) return ".dff";
 		if (font instanceof VectorFont) return ".kpcax";
 		return null;
 	}
