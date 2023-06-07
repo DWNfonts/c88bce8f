@@ -40,15 +40,15 @@ The input format is determined by the file extension of the input file. Supporte
 
 On Mac OS X you can also launch or drop a font file onto the Bits'N'Picas application.
 
-![](wiki/screenshot.png)
+![](wiki.bnp/screenshot.png)
 
 Bits'N'Picas can also open font, desk accessory, and system suitcases and move around fonts, desk accessories, scripts, keyboard layouts, and sounds, just like the Finder used to be able to do back in the good old days of System 7.
 
-![](wiki/suitcases.png)
+![](wiki.bnp/suitcases.png)
 
 A similar interface also exists for GEOS fonts.
 
-![](wiki/geosfonts.png)
+![](wiki.bnp/geosfonts.png)
 
 ## Converting Bitmap Fonts
 
