@@ -5,3 +5,4 @@ The README from Bits'n'Picas can be found [here](README.BnP.md).
 ![./pic/main.png]
 ## What's changed?
 * Removed `keyedit` & `mapedit` because I hardly use these tools.
+* Added `FlatLaF`.

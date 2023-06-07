@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
 Created-By: 2.9.0 (DWNFonts)
 Main-Class: com.dwnfonts.c88bce8f.main.Main
-Class-Path: KSFL.jar ual.jar dep/KSFL.jar dep/ual.jar
+Class-Path: KSFL.jar ual.jar dep/KSFL.jar dep/ual.jar dep/flatlaf.jar

@@ -23,12 +23,14 @@ import com.dwnfonts.c88bce8f.VectorFontGlyph;
 import com.dwnfonts.c88bce8f.edit.importer.ImportFormat;
 import com.dwnfonts.c88bce8f.exporter.KbitxBitmapFontExporter;
 import com.dwnfonts.c88bce8f.exporter.KpcaxVectorFontExporter;
+import com.formdev.flatlaf.*;
 
 public class Main {
 	public static void main(String[] args) {
 		try { System.setProperty("com.apple.mrj.application.apple.menu.about.name", "Bits'n'Picas"); } catch (Exception e) {}
 		try { System.setProperty("apple.laf.useScreenMenuBar", "true"); } catch (Exception e) {}
-		try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); } catch (Exception e) {}
+		FlatLightLaf.setup();
+		// try { UIManager.setLookAndFeel(); } catch (Exception e) {}
 		
 		try {
 			Method getModule = Class.class.getMethod("getModule");

@@ -21,12 +21,12 @@ bin: src
 ifeq ($(origin JAVACFLAGS), undefined)
 	$(eval JAVACFLAGS = $(shell dep/minJavaVerOpts))
 endif
-	javac $(JAVACFLAGS) -classpath dep/KSFL.jar:dep/ual.jar -sourcepath src $(SRCFILES) -d bin
+	javac $(JAVACFLAGS) -classpath dep/KSFL.jar:dep/ual.jar:dep/flatlaf.jar -sourcepath src $(SRCFILES) -d bin
 	$(foreach res,$(RESFILES),cp src/$(res) bin/$(res);)
 
 doc: src
 	mkdir -p doc
-	javadoc $(JAVADOCFLAGS) -classpath dep/KSFL.jar:dep/ual.jar -sourcepath src $(PACKAGES) -d doc
+	javadoc $(JAVADOCFLAGS) -classpath dep/KSFL.jar:dep/ual.jar:dep/flatlaf.jar -sourcepath src $(PACKAGES) -d doc
 
 c88bce8f.jar: bin
 	export COPYFILE_DISABLE=true
