@@ -27,17 +27,17 @@ public enum BitmapOutputFormat {
 		public BitmapFontExporter createExporter(BitmapOutputOptions o) {
 			return new TTFBitmapFontExporter(o.xSize, o.ySize, o.extendWinMetrics);
 		}
-	},
+	} /* ,
 	OTB(".otb", "otb") {
 		public BitmapFontExporter createExporter(BitmapOutputOptions o) {
 			return new OTBBitmapFontExporter(o.extendWinMetrics);
 		}
-	},
+	} */ ,
 	BDF(".bdf", "bdf") {
 		public BitmapFontExporter createExporter(BitmapOutputOptions o) {
 			return new BDFBitmapFontExporter();
 		}
-	},
+	} /* ,
 	PSF2(".psf", "psf", "psf2") {
 		public BitmapFontExporter createExporter(BitmapOutputOptions o) {
 			return new PSFBitmapFontExporter(
@@ -194,7 +194,7 @@ public enum BitmapOutputFormat {
 		public BitmapFontExporter createExporter(BitmapOutputOptions o) {
 			return new TOSBitmapFontExporter();
 		}
-	};
+	} */ ;
 	
 	public final String[] ids;
 	public final String suffix;

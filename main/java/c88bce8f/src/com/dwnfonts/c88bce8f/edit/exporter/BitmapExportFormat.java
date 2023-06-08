@@ -4,10 +4,7 @@ import java.awt.Dimension;
 import java.io.File;
 import java.io.IOException;
 import com.dwnfonts.c88bce8f.BitmapFontExporter;
-import com.dwnfonts.c88bce8f.MacUtility;
 import com.dwnfonts.c88bce8f.exporter.*;
-import com.kreative.unicode.data.EncodingList;
-import com.kreative.unicode.data.GlyphList;
 
 public enum BitmapExportFormat {
 	KBITS("Kbits (Kreative Bits'n'Picas 1.x)", ".kbits", "v1") {
@@ -21,18 +18,19 @@ public enum BitmapExportFormat {
 			boolean exWinMtx = o.getExtendWinMetrics();
 			return new TTFBitmapFontExporter(d.width, d.height, exWinMtx);
 		}
-	},
+	} /* ,
+		
 	OTB("OTB (OpenType Bitmap)", ".otb", "otb") {
 		public BitmapFontExporter createExporter(BitmapExportOptions o) {
 			boolean exWinMtx = o.getExtendWinMetrics();
 			return new OTBBitmapFontExporter(exWinMtx);
 		}
-	},
+	} */ ,
 	BDF("BDF (Bitmap Distribution Format)", ".bdf", "none") {
 		public BitmapFontExporter createExporter(BitmapExportOptions o) {
 			return new BDFBitmapFontExporter();
 		}
-	},
+	} /* ,
 	PSF("PSF (PC Screen Font) (Uncompressed)", ".psf", "psf") {
 		public BitmapFontExporter createExporter(BitmapExportOptions o) {
 			return new PSFBitmapFontExporter(
@@ -165,7 +163,7 @@ public enum BitmapExportFormat {
 		public BitmapFontExporter createExporter(BitmapExportOptions o) {
 			return new TOSBitmapFontExporter();
 		}
-	};
+	} */ ;
 	
 	public final String name;
 	public final String suffix;

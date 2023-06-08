@@ -45,7 +45,7 @@ public enum ImportFormat {
 	BDF {
 		public boolean recognize(FileProxy fp) { return fp.hasExtension(".bdf"); }
 		public FontImporter<?> createImporter() { return new BDFBitmapFontImporter(); }
-	},
+	} /* ,
 	PSF {
 		public boolean recognize(FileProxy fp) { return fp.hasExtension(".psf", ".psfu"); }
 		public JFrame createOptionFrame(File file) throws IOException {
@@ -205,7 +205,7 @@ public enum ImportFormat {
 		public JFrame createOptionFrame(File file) throws IOException {
 			return MoverFrame.forFile(file);
 		}
-	},
+	} */ ,
 	BINARY {
 		public boolean recognize(FileProxy fp) { return fp.hasExtension(".bin", ".rom"); }
 		public JFrame createOptionFrame(File file) throws IOException {

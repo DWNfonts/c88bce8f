@@ -37,7 +37,7 @@ public enum BitmapInputFormat {
 		public BitmapFontImporter createImporter(BitmapInputOptions o) {
 			return new BDFBitmapFontImporter();
 		}
-	},
+	} /* ,
 	PSF(BitmapFont.NAME_FAMILY) {
 		public boolean recognize(FileProxy fp) { return fp.hasExtension(".psf", ".psfu"); }
 		public BitmapFontImporter createImporter(BitmapInputOptions o) {
@@ -190,7 +190,7 @@ public enum BitmapInputFormat {
 		public BitmapFontImporter createImporter(BitmapInputOptions o) {
 			return new NFNTBitmapFontImporter(o.getEncoding());
 		}
-	};
+	} */ ;
 	
 	public final int nameType;
 	public final boolean macResFork;

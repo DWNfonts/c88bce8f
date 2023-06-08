@@ -12,3 +12,6 @@ hs_err_pid*
 # DS_Store from macOS
 .DS_Store
 */.DS_Store
+
+# compiled files
+main/java/c88bce8f/bin/
